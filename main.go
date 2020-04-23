@@ -7,7 +7,7 @@ import (
 )
 
 func index(w http.ResponseWriter, r *http.Request) {
-	tpl, _ := template.ParseFiles("index.html")
+	tpl, _ := template.ParseFiles("./pages/index.html")
 	data := map[string]string{
 		"Title":    "SonSon Doces",
 		"Wellcome": "Bem Vindo!, aproveite nossas ofertas",
